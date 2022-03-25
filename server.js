@@ -3,9 +3,6 @@ const app = express();
 
 const PORT = process.env.PORT || 80;
 
-// middelware
-app.use(express.static("./"));
-app.use(express.json());
 
 app.get('/', (req, res) =>{
     res.sendFile('../html/index.html')
