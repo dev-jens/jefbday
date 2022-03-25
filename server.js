@@ -8,7 +8,7 @@ app.use(express.static("./"));
 app.use(express.json());
 
 app.get('/', (req, res) =>{
-    res.sendFile(__dirname + '/html/index.html')
+    res.sendFile('../html/index.html')
 })
 
 
